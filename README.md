@@ -12,7 +12,7 @@
 <p><strong>Multimedia Support:</strong> Upload photos and videos to accompany your stories, leveraging the flexibility of the MERN stack for handling media.</p>
 
 <h2>Interact with Other Users</h2>
-
+<img src="https://raw.githubusercontent.com/Nomanlatifkkr/nomiSocial-app/refs/heads/main/Nomi-Socila-app-12-21-2024_12_09_PM.png" alt="User Interaction" width="600">
 <p><strong>Likes & Comments:</strong> Engage with other users' posts by liking and commenting. Share your thoughts and feedback, and build connections with others.</p>
 <p><strong>Follow Users:</strong> Stay updated with your favorite users by following them. Their posts will appear on your feed, keeping you connected to their latest content.</p>
 
