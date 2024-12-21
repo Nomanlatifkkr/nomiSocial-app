@@ -1,0 +1,92 @@
+/* General Navbar Styles */
+.navbar {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
+    /* Added consistent border for the bottom */
+}
+
+.navbar-logo img {
+    height: 55px;
+    /* Adjust this value to make the logo smaller or larger */
+    width: auto;
+    /* Maintain the aspect ratio */
+    object-fit: contain;
+    /* Ensures the image fits within the container without stretching */
+}
+
+/* Optional: If you need to adjust the size for smaller screens, you can use media queries */
+@media (max-width: 768px) {
+    .navbar-logo img {
+        height: 30px;
+        /* Smaller logo size for mobile or tablet */
+    }
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #007bff;
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Space between avatar and logout button */
+}
+
+.navbar-profile .MuiIconButton-root {
+    padding: 4px;
+}
+
+.navbar-profile .MuiAvatar-root {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.logout-button:hover {
+    color: #007bff;
+}
+
+.navbar-avatar-link {
+    text-decoration: none;
+}

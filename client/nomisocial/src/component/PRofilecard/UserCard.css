@@ -1,0 +1,97 @@
+/* User Card Container */
+.user-card {
+    background: #fff;
+    width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Container */
+.card-image-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.user-card:hover .card-image {
+    transform: translateY(-20px);
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+    background-color: #fdfdfd;
+}
+
+.card-name {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-title {
+    margin: 5px 0 15px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.card-divider {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+/* Stats Section */
+.card-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Action Buttons */
+.card-actions {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.follow-btn {
+    text-transform: capitalize;
+}
+
+.profile-btn {
+    text-transform: capitalize;
+}

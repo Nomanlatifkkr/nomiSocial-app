@@ -1,0 +1,26 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the root container (body) and HTML take full width and height */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Full height container for the home section */
+.homesection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    /* Ensure it takes the full height of the viewport */
+    width: 100%;
+    /* Ensure full width */
+}
+
+/* Optional: Add any additional styling as per your layout needs */

@@ -1,0 +1,155 @@
+/* General styling for the postcard */
+.postcard {
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    gap: 16px;
+    position: relative;
+}
+
+/* Left section with the avatar */
+.left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Position avatar in the top right corner */
+.avatar {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #3f51b5;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Right section with the form */
+.right {
+    flex: 1;
+    overflow-x: hidden;
+    margin-right: 80px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #3f51b5;
+    box-shadow: 0 0 4px rgba(63, 81, 181, 0.3);
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Submit button */
+.buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #303f9f;
+}
+
+/* Image upload button */
+.label-upload {
+    display: inline-block;
+}
+
+.label-upload input[type="file"] {
+    display: none;
+}
+
+.custom-upload-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    margin-right: 5px;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-upload-button:hover {
+    background-color: #303f9f;
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+.custom-upload-button svg {
+    font-size: 20px;
+}
+
+/* Image preview */
+.image-preview {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Success Popup */
+.success-popup {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}

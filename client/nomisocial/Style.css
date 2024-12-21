@@ -1,0 +1,9 @@
+#root {
+    width: 100%;
+    max-width: 1200px;
+    /* Set the maximum width */
+    margin: 0 auto;
+    /* Center it horizontally */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+}

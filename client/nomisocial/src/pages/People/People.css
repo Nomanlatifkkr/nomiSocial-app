@@ -1,0 +1,50 @@
+/* Main container styles */
+.people-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 100px;
+    align-items: center;
+
+
+
+
+
+
+}
+
+/* Grid container for displaying user cards */
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+
+    max-width: 1200px;
+}
+
+/* Style for the PeopleCard component */
+.people-card {
+    margin-right: 200px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .people-grid {
+        grid-template-columns: 1fr;
+        /* Change to 1 column for mobile */
+        gap: 12px;
+        /* Adjust gap for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .people-grid {
+        grid-template-columns: 1fr;
+        /* For very small screens, also 1 column */
+        gap: 8px;
+        /* Reduce gap further on very small screens */
+    }
+}

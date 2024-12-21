@@ -1,0 +1,99 @@
+/* General Post Styles */
+.post {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 16px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Header */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.user-info {
+    margin-left: 12px;
+}
+
+.user-info h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-info .time {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.author-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Content */
+.content {
+    margin-bottom: 16px;
+}
+
+.content p {
+    margin: 0 0 12px;
+    font-size: 16px;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+/* Update Button */
+.update-button {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background-color: #ffcc00;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.update-button:hover {
+    background-color: #ffb400;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.footer .like,
+.footer .comments {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
